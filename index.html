@@ -51,23 +51,22 @@
             <h2>Plan Your Trip</h2>
 
             <h3>How to Get there</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round"></svg>
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
+</svg>
+
+            (href=”#”) (title=”Search for flights”)
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <polyline points="9 6 15 12 9 18" />
+</svg>
         </section>
     </main>
 </body>
 </html>
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
-</svg>
-
-(href=”#”) (title=”Search for flights”)
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="3" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <polyline points="9 6 15 12 9 18" />
-</svg>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Places to Stay
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="150" height="150" viewBox="0 0 24 24" stroke-width="1" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -113,29 +112,35 @@ Where to Eat
 <section id="Testimonials">
     <h2>Testimonials</h2>
         <h3>Miranda Blake</h3>
-        <img src="miranda-blake.png" alt="Miranda Blake">
+        <img src="miranda-blake.png" alt="Miranda Blake" srcset="miranda-blake-S.png 320w, 
+        miranda-blake-M.png 780w, miranda-blake-L.png 1024w" 
+        sizes="(max-width: 320px) 280px, (max-width: 780px) 700px, 1024px">
+        <p>Traveling From: London, England</p>
+        <blockquote>“I traveled here for business, but my stay was extended. Now it is my home.”</blockquote>
+
+        <h3>Max Winter</h3>
+        <img src="max-winter.png" alt="Max Winter" srcset="max-winter-S.png 320w, 
+        max-winter-M.png 780w, max-winter-L.png 1024w" 
+        sizes="(max-width: 320px) 280px, (max-width: 780px) 700px, 1024px">
+        <p>Traveling From: Berlin, Germany</p>
+        <blockquote>“Great escape from my reality. Beautiful sunsets, wonderful people, great beer.”</blockquote>
+
+        <h3>Inés Villegoes</h3>
+        <img src="ines-villegoes.png" alt="Inés Villegoes" srcset="ines-villegoes-S.png 320w, 
+        ines-villegoes-M.png 780w, ines-villegoes-L.png 1024w" 
+        sizes="(max-width: 320px) 280px, (max-width: 780px) 700px, 1024px">
+        <p>Traveling From: Barcelona, Spain</p>
+        <blockquote>“A very safe environment for all travelers.”</blockquote>
+
+        <h3>Carmen Lorenzo</h3>
+        <img src="carmen-lorenzo.png" alt="Carmen Lorenzo" srcset="carmen-lorenzo-S.png 320w, 
+        carmen-lorenzo-M.png 780w, carmen-lorenzo-L.png 1024w" 
+        sizes="(max-width: 320px) 280px, (max-width: 780px) 700px, 1024px">
+        <p>Traveling From: Madrid, Spain</p>
+        <blockquote>“Live, laugh, love-- everything you need in Majorca.”</blockquote>
+
+
 </section>
-
-
-Traveling From: London, England
-“I traveled here for business, but my stay was extended. Now it is my home.”
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Max Winter
-max-winter.png
-Traveling From: Berlin, Germany
-“Great escape from my reality. Beautiful sunsets, wonderful people, great beer. ”
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Inés Villegoes
-ines-villegoes.png
-Traveling From: Barcelona, Spain
-“A very safe environment for all travelers.”
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Carmen Lorenzo
-carmen-lorenzo.png
-Traveling From: Madrid, Spain
-“Live, laugh, love-- everything you need in Majorca.”
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
 About Your Destination
@@ -182,8 +187,11 @@ Population
 Population: 923,608
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-
-Contact Us
+<section id="Contact">
+<h2>Contact Us</h2>
+<form action="#" method="post">
+    <label></label>
+</form>
 First Name (Enter first name)
 Last Name (Enter last name)
 
@@ -193,7 +201,7 @@ Phone Number (Enter telephone number)
 
 Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
 Travel Time (Fall, Winter, Spring, Summer, Flexible)
-
+</section>
 
 <footer>
     <p>&copy; 2021 Wunderlust Privacy Statement Terms of Service</p>
