@@ -142,11 +142,11 @@ Where to Eat
 
 </section>
 
-
-About Your Destination
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-Size
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<section id="destination">
+    <h2>About Your Destination</h2>
+    <hr>
+    <h3>Size</h3>
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round"></svg>
   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
   <path d="M17 3l4 4l-14 14l-4 -4z" />
   <path d="M16 7l-1.5 -1.5" />
@@ -154,8 +154,15 @@ Size
   <path d="M10 13l-1.5 -1.5" />
   <path d="M7 16l-1.5 -1.5" />
 </svg>
+<p>Size: 1,405 miles squared</p>
+</hr>
+</section>
+</hr>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-Size: 1,405 miles squared
+
+
+
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 Elevation
 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#a905b6" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -192,33 +199,47 @@ Population: 923,608
 <form action="#" method="post">
     <label></label>
 
-First Name (Enter first name)
-Last Name (Enter last name)
+<label for="first-name">First Name</label>
+<input type="text" id="first-name" name="first-name" placeholder="Enter first name" required>
 
-Contact Method (Email, Text, Phone)
-Email Address (Enter Email)
-Phone Number (Enter telephone number)
+<label for="last-name">Last Name</label>
+<input type="text" id="last-name" name="last-name" placeholder="Enter last name" required>
 
-<label for="Destination">Destination</label>
-<select id="Destination" name="destination">
-    <option value="">Barcelona</option>
-    <option value="">Granada</option>
-    <option value="">Ibiza</option>
-    <option value="">Madrid</option>
-    <option value="">Majorca</option>
-    <option value="">Seville</option>
-    <option value="">Tenerife</option>
-    <option value="">Valencia</option>
+<label for="contact-method">Contact Method</label>
+<select id="contact-method" name="contact-method">
+    <option value="email">Email</option>
+    <option value="text">Text</option>
+    <option value="phone">Phone</option>
+</select>
+
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="Enter telephone number" required>
+
+<label for="destination">Destination</label>
+<select id="destination" name="destination">
+    <option value="barcelona">Barcelona</option>
+    <option value="granada">Granada</option>
+    <option value="ibiza">Ibiza</option>
+    <option value="midrid">Madrid</option>
+    <option value="majorca">Majorca</option>
+    <option value="seville">Seville</option>
+    <option value="tenerife">Tenerife</option>
+    <option value="valencia">Valencia</option>
 </select>
  
-<label for="">Travel Time</label>
-<select id="" name="">
-    <option value="">Fall</option>
-    <option value="">Winter</option>
-    <option value="">Spring</option>
-    <option value="">Summer</option>
-    <option value="">Flexible</option>
+<label for="travel-time">Travel Time</label>
+<select id="travel-time" name="travel-time">
+    <option value="fall">Fall</option>
+    <option value="winter">Winter</option>
+    <option value="spring">Spring</option>
+    <option value="summer">Summer</option>
+    <option value="flexible">Flexible</option>
 </select>
+
+<button type="submit">Submit</button>
 </form>
 </section>
 
