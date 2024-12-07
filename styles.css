@@ -50,3 +50,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+#skip {
+    position: absolute;
+    top: auto;
+}
+
+body {
+    overflow-x: hidden;
+    list-style:none;
+}
