@@ -72,8 +72,15 @@ header {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
+#logo img {
+    width: 140px;
+}
+
+h1 {
+    font-family: 'molle', cursive;
+    font-size: 3 em;
+    color: #333;
+    margin-right: 20px;
 }
 
 h1, h2, h3 {
@@ -92,4 +99,30 @@ img {
     height: auto;
     max-width: 100%;
     display: block;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0.5;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
 }
